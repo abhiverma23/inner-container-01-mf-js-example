@@ -12,7 +12,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --open --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js",
+    "build": "webpack --config webpack.prod.js && cp public/.htaccess dist",
     "prod-deploy": "node ftp-prod.js"
   },
   "repository": {
